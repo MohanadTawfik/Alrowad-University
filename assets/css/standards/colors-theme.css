@@ -1,0 +1,66 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(155, 80%, 23%);
+  --first-color-rgb: 12, 107, 67;
+  --first-color--darken: hsl(154, 100%, 13%);
+  --second-color: rgb(143, 199, 62);
+  --second-color-rgb: 143, 199, 62;
+  --third-color: hsl(66, 68%, 57%);
+  --text-color: hsl(0, 0%, 7%);
+  --border-color: hsla(0, 0%, 0%, 0.085);
+  --text-muted-color: #313131;
+  /* --background-color: hsl(0, 0%, 100%); */
+  --background-color: rgb(254, 254, 254);
+  --background-color-rgb: 254, 254, 254;
+  --link-color: #015ec2;
+  --link-hover-color: #014b9b;
+  /*========== Colors ==========*/
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --border-rounded: 0.25rem;
+  --header-height: 2rem;
+}
+
+:has(#theme-toggler:checked) {
+  --text-color: hsl(0, 0%, 100%);
+  --border-color: hsla(0, 0%, 0%, 0.85);
+  --text-muted-color: hsl(0, 0%, 89%);
+  --background-color: hsl(0, 0%, 0%);
+  --background-color-rgb: 55, 55, 55;
+}
+
+:has(#theme-toggler:checked) .background__overlay {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+:has(#theme-toggler:checked) .preloader {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+
+}
+
+:has(#theme-toggler:checked) .header .nav::after {
+  background: #000000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.95) 45%, #000000 100%);
+}
+
+:has(#theme-toggler:checked) .header .theme__toggler .light--theme {
+  transform: scale(1) rotate(360deg);
+  -webkit-transform: scale(1) rotate(360deg);
+  -moz-transform: scale(1) rotate(360deg);
+  -ms-transform: scale(1) rotate(360deg);
+  -o-transform: scale(1) rotate(360deg);
+}
+
+:has(#theme-toggler:checked) .header .theme__toggler .dark--theme {
+  transform: rotate(360deg) scale(0);
+  -webkit-transform: rotate(360deg) scale(0);
+  -moz-transform: rotate(360deg) scale(0);
+  -ms-transform: rotate(360deg) scale(0);
+  -o-transform: rotate(360deg) scale(0);
+}

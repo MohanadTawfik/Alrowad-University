@@ -1,0 +1,232 @@
+@import url("./colors-theme.css");
+
+/* includes the fonts  */
+@font-face {
+  font-family: cairo;
+  src: url("./../../webfonts/custom-fonts/Cairo\ Regular\ 400.ttf");
+}
+
+@font-face {
+  font-family: cairo;
+
+  src: url("./../../webfonts/custom-fonts/Cairo\ Bold\ 700.ttf");
+  font-weight: bold;
+}
+
+/*=============== BASE ===============*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  height: 100%;
+  /* font-size: 15px; */
+  font-size: var(--normal-font-size);
+  scroll-padding-top: calc(var(--header-height) + 100px);
+}
+
+body {
+  padding: 0;
+  font-family: cairo;
+  overflow-y: auto;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+  background-color: rgba(var(--background-color-rgb), 0.085);
+  caret-color: var(--first-color);
+
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:has(#theme-toggler:checked) body {
+  background-color: #111111;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin-inline: auto;
+  padding-inline: 3rem;
+}
+
+/* scrollbar style */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0px 2px 0px rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(var(--background-color-rgb), 0.85);
+}
+
+#theme-toggler,
+#menu-toggler,
+#language_toggler {
+  display: none;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1,
+.h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+
+  h2,
+  .h2 {
+    font-size: 2rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+
+  h3,
+  .h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+
+  h4,
+  .h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  /* text-wrap: balance; */
+}
+
+a {
+  color: var(--link-color);
+  /* text-decoration: underline; */
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+p {
+  font-size: 15px;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: rgba(var(--background-color-rgb), 0.75);
+  text-align: left;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+/* For small devices */
+@media screen and (min-width: 800px) {
+  .container {
+    padding-inline: 6rem;
+  }
+}

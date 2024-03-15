@@ -1,0 +1,6 @@
+@charset "UTF-8";
+@import url("./standards/initialize.css");
+@import url("./standards/background.css");
+@import url("./layout/header.css");
+@import url("./layout/main_section.css");
+@import url("./layout/footer.css");
