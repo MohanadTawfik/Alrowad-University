@@ -1387,7 +1387,7 @@ body::dir(rtl) .gtco-features #bg-services {
   -o-transition: .4s;
 }
 
-:dir(rtl) .more_button .more svg {
+:dir(rtl) .main .activities .more_button .more svg {
   margin: -0.5rem 0 -0.5rem -1.2rem;
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
@@ -1404,7 +1404,7 @@ body::dir(rtl) .gtco-features #bg-services {
   -o-transform: translateX(0.25rem);
 }
 
-:dir(rtl) .more_button .more:hover svg {
+:dir(rtl) .main .activities .more_button .more:hover svg {
   transform: rotate(180deg) translateX(0.25rem);
   -webkit-transform: rotate(180deg) translateX(0.25rem);
   -moz-transform: rotate(180deg) translateX(0.25rem);
