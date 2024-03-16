@@ -1375,41 +1375,41 @@ body::dir(rtl) .gtco-features #bg-services {
   background-color: rgba(var(--background-color-rgb), 0.95);
   border-radius: 50%;
   height: 35px;
-  margin: -0.5rem -1.2rem -0.5rem 0;
+  margin: -0.5rem 0 -0.5rem -1.2rem;
+  transform: rotate(180deg);
   width: 35px;
   color: var(--first-color);
   font-size: 10px !important;
   text-align: center;
   transition: .4s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
   -webkit-transition: .4s;
   -moz-transition: .4s;
   -ms-transition: .4s;
   -o-transition: .4s;
 }
 
-:dir(rtl) .main .activities .more_button .more svg {
-  margin: -0.5rem 0 -0.5rem -1.2rem;
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+:dir(ltr) .more_button .more svg {
+  margin: -0.5rem -1.2rem -0.5rem 0;
 }
 
 .more_button .more:hover svg {
-  transform: translateX(0.25rem);
-  -webkit-transform: translateX(0.25rem);
-  -moz-transform: translateX(0.25rem);
-  -ms-transform: translateX(0.25rem);
-  -o-transform: translateX(0.25rem);
-}
-
-:dir(rtl) .main .activities .more_button .more:hover svg {
   transform: rotate(180deg) translateX(0.25rem);
   -webkit-transform: rotate(180deg) translateX(0.25rem);
   -moz-transform: rotate(180deg) translateX(0.25rem);
   -ms-transform: rotate(180deg) translateX(0.25rem);
   -o-transform: rotate(180deg) translateX(0.25rem);
+}
+
+:dir(ltr) .more_button .more:hover svg {
+  transform: translateX(0.25rem);
+  -webkit-transform: translateX(0.25rem);
+  -moz-transform: translateX(0.25rem);
+  -ms-transform: translateX(0.25rem);
+  -o-transform: translateX(0.25rem);
 }
 
 /* 
