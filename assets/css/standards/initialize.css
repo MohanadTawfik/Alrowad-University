@@ -60,7 +60,7 @@ body {
   width: 100%;
   max-width: 1220px;
   margin-inline: auto;
-  padding-inline: 6rem;
+  padding-inline: 2rem;
 }
 
 /* scrollbar style */
@@ -225,24 +225,8 @@ caption {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 /* For small devices */
-@media screen and (max-width: 550px) {
-
+@media screen and (min-width: 800px) {
   .container {
-
-    padding-inline: 1rem;
-
+    padding-inline: 6rem;
   }
-
-}
-
-
-
-@media screen and (max-width: 800px) {
-
-  .container {
-
-    padding-inline: 2rem;
-
-  }
-
 }
