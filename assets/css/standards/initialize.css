@@ -3,13 +3,13 @@
 /* includes the fonts  */
 @font-face {
   font-family: cairo;
-  src: url("./../../webfonts/custom-fonts/Cairo\ Regular\ 400.ttf");
+  src: url("./../../webfonts/custom-fonts/Cairo-Regular-400.ttf");
 }
 
 @font-face {
   font-family: cairo;
 
-  src: url("./../../webfonts/custom-fonts/Cairo\ Bold\ 700.ttf");
+  src: url("./../../webfonts/custom-fonts/Cairo-Bold-700.ttf");
   font-weight: bold;
 }
 
