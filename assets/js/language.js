@@ -10,11 +10,9 @@ languageButton.onchange = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  const language = localStorage.getItem("selected_language");
-  if (language) {
+  const language = localStorage.getItem("selected_language") || "ar";
     languageButton.checked = language === "ar" ? true : false;
     setLanguage(language);
-  }
 });
 
 const setLanguage = (language) => {
