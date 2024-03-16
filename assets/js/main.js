@@ -63,7 +63,7 @@ const sr = ScrollReveal({
   distance: "60px",
   duration: 1500,
   delay: 100,
-  reset: true, // Animation repeat
+  //reset: true, // Animation repeat
 });
 
 sr.reveal(
