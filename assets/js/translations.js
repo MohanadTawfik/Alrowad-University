@@ -246,7 +246,7 @@ const translations = {
       "Registration and admission are open in all scientific specializations at the university.",
     rigister_address:
       "For more information, you can visit the university campus located in Habeel Salman - opposite Taiz University.",
-    hastag: "#Pioneer_University_your_path_towards_leadership",
+    hastag: "#Al-Rowad_University_path_to_leadership",
 
     acitvity_1: "Alrowad Hackathon 2 launches for designing web interfaces",
     acitvity_1_text:
