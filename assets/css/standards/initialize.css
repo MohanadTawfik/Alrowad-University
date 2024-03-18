@@ -34,7 +34,7 @@
 
 html {
   height: 100%;
-  /* font-size: 15px; */
+  font-size: 8px;
   font-size: var(--normal-font-size);
   scroll-padding-top: calc(var(--header-height) + 100px);
 }
